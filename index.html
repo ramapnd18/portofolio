@@ -3,175 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Rama</title>
+    <title>Rama Tri Ramdhani | Informatics Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <div class="logo">
-            <h1>Rama Tri Ramdhani</h1>
-          </div>
-          <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-          </button>
-          <div class="nav-menu">
-            <ul>
-              <li><a href="#about">Tentang Saya</a></li>
-              <li><a href="#skills">Keterampilan</a></li>
-              <li><a href="#projects">Proyek</a></li>
-              <li><a href="#contact">Kontak</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="header-content">
-          <h3>Halo, saya Rama Tri Ramdhani</h3>
-          <p>
-            Seorang pengembang web yang bersemangat dengan spesialisasi di HTML,
-            CSS, dan JavaScript.
-          </p>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">Rama<span>.dev</span></a>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#skills" class="nav-link">Skill</a></li>
+          <li><a href="#projects" class="nav-link">Proyek</a></li>
+          <li><a href="#contact" class="btn-primary">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <span class="greeting">Halo, nama saya</span>
+        <h1>Rama Tri Ramdhani</h1>
+        <h3 class="typing-text">Saya seorang <span class="highlight"></span></h3>
+        <p>
+          Mahasiswa Informatika Semester 4 yang tertarik pada Software Engineering, 
+          Data Science, dan Web Development. Mengubah baris kode menjadi solusi nyata.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-filled">Lihat Proyek</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section id="about" class="about-me">
-        <div class="container">
-          <img
-            src="asset/fotoprofil.jpg"
-            alt="Foto Profil"
-            class="profile-picture"
-          />
-          <h2>Tentang Saya</h2>
+    <section id="about" class="section about">
+      <div class="container about-container">
+        <div class="about-img-wrapper">
+          <img src="asset/fotoprofil.jpeg" alt="Rama Tri Ramdhani" class="about-img" />
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">Tentang Saya</h2>
           <p>
-            Saya seorang pengembang web junior dengan minat besar dalam
-            menciptakan situs web yang responsif dan ramah pengguna. Saya suka
-            mempelajari teknologi baru dan memecahkan masalah melalui kode.
-            Perjalanan saya di pengembangan web dimulai dengan ketertarikan pada
-            bagaimana situs web dibangun dan sejak itu berkembang menjadi hasrat
-            untuk menciptakan pengalaman digital yang menarik.
+            Saya adalah mahasiswa Informatika yang antusias membangun aplikasi web yang 
+            fungsional dan estetis. Saat ini saya sedang mendalami <strong>Fullstack Web Development</strong> 
+            dan konsep <strong>Data Science</strong>.
           </p>
-        </div>
-      </section>
-
-      <section id="skills" class="skills">
-        <div class="container">
-          <h2>Keterampilan</h2>
-          <div class="skills-grid">
-            <div class="skill-item">
-              <h3>HTML5</h3>
-              <p>Struktur semantik konten web.</p>
-            </div>
-            <div class="skill-item">
-              <h3>CSS3</h3>
-              <p>Penataan antarmuka pengguna yang responsif dan estetis.</p>
-            </div>
-            <div class="skill-item">
-              <h3>JavaScript</h3>
-              <p>Aplikasi web yang dinamis dan interaktif.</p>
-            </div>
-            <div class="skill-item">
-              <h3>PHP</h3>
-              <p>Pengembangan backend web dengan bahasa pemrograman PHP.</p>
-            </div>
-            <div class="skill-item">
-              <h3>MySQL</h3>
-              <p>Manajemen basis data relasional untuk aplikasi web.</p>
-            </div>
-            <div class="skill-item">
-              <h3>Git & GitHub</h3>
-              <p>Kelola versi kode dan kolaborasi dalam proyek pengembangan web.</p>
-            </div>
-            <div class="skill-item">
-              <h3>Bootstrap</h3>
-              <p>Framework CSS untuk desain web responsif dan komponen UI.</p>
-            </div>
-            <div class="skill-item">
-              <h3>tailwind CSS</h3>
-              <p>Framework CSS yang memungkinkan desain responsif dan konsisten dengan pendekatan utility-first.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="projects">
-        <div class="container">
-          <h2>Proyek</h2>
-          <div class="projects-grid">
-            <div class="project-item">
-              <h3>Proyek Satu: Linktree</h3>
-              <p>
-                Halaman arahan sederhana yang menunjukkan prinsip desain
-                responsif dan animasi CSS dasar.
-              </p>
-              <a href="https://linktree-livid-alpha.vercel.app/" target="_blank"
-                >Lihat Proyek</a
-              >
-            </div>
-            <div class="project-item">
-              <h3>Proyek Dua: kasir adi jaya</h3>
-              <p>
-                Aplikasi kasir sederhana yang dibuat dengan HTML, CSS, dan
-                JavaScript, berfokus pada pengelolaan transaksi penjualan.
-                (Masih dalam pengembangan)
-              </p>
-              <a href="https://toko-adi-jaya.vercel.app/" target="_blank"
-                >Lihat Proyek</a
-              >
-            </div>
-            <div class="project-item">
-              <h3>Proyek Tiga: Kalkulus Linear</h3>
-              <p>
-                Aplikasi kalkulator dasar yang dikembangkan menggunakan HTML,
-                CSS, dan JavaScript, berfokus pada manipulasi DOM dan penanganan
-                acara.
-              </p>
-              <a href="https://kalkulus-linear.vercel.app/" target="_blank"
-                >Lihat Proyek</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact">
-        <div class="container">
-          <h2>Hubungi Saya</h2>
-          <p align="center">
-            Jangan ragu untuk menghubungi saya untuk kolaborasi atau peluang!
+          <p>
+            Selain coding, saya aktif mempelajari manajemen proyek perangkat lunak dan 
+            suka mengeksplorasi teknologi baru seperti Tailwind CSS dan Node.js.
           </p>
-          <div class="contact-info">
-            <p>
-              Email:
-              <a href="mailto:ramatriramdhani@gmail.com"
-                >ramatriramdhani@gmail.com</a
-              >
-            </p>
-            <p>
-              LinkedIn:
-              <a href="https://linkedin.com/in/ramatriramdhani" target="_blank"
-                >linkedin.com/in/ramatriramdhani</a
-              >
-            </p>
-            <p>
-              GitHub:
-              <a href="https://github.com/ramapnd18" target="_blank"
-                >github.com/ramapnd18</a
-              >
-            </p>
+          <div class="stats">
+            <div class="stat-item">
+              <h3>4+</h3>
+              <p>Semester Kuliah</p>
+            </div>
+            <div class="stat-item">
+              <h3>5+</h3>
+              <p>Proyek Selesai</p>
+            </div>
           </div>
-          
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title text-center">Keahlian Teknis</h2>
+        <div class="skills-wrapper">
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-code"></i> Frontend</h3>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-server"></i> Backend & DB</h3>
+            <div class="skill-tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Node.js (Basic)</span>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-tools"></i> Tools</h3>
+            <div class="skill-tags">
+              <span>Git & GitHub</span>
+              <span>VS Code</span>
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title text-center">Proyek Terbaru</h2>
+        <div class="projects-grid">
+          <div class="project-card fade-in">
+            <div class="project-info">
+              <h3>Linktree Clone</h3>
+              <p>Halaman landing page responsif dengan animasi CSS modern sebagai pusat tautan media sosial.</p>
+              <div class="tech-stack">
+                <small>HTML</small> <small>CSS</small>
+              </div>
+              <a href="https://linktree-livid-alpha.vercel.app/" target="_blank" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card fade-in">
+            <div class="project-info">
+              <h3>Kasir Adi Jaya</h3>
+              <p>Sistem Point of Sale (POS) sederhana untuk manajemen transaksi penjualan toko.</p>
+              <div class="tech-stack">
+                <small>JS</small> <small>DOM</small> <small>CSS</small>
+              </div>
+              <a href="https://toko-adi-jaya.vercel.app/" target="_blank" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card fade-in">
+            <div class="project-info">
+              <h3>Kalkulus Linear Tool</h3>
+              <p>Aplikasi web untuk perhitungan matematika dasar dengan manipulasi DOM interaktif.</p>
+              <div class="tech-stack">
+                <small>JavaScript</small> <small>Algorithms</small>
+              </div>
+              <a href="https://kalkulus-linear.vercel.app/" target="_blank" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-container">
+        <h2 class="section-title text-center">Hubungi Saya</h2>
+        <p class="text-center">Tertarik berkolaborasi atau punya pertanyaan? Kirimkan pesan!</p>
+        
+        <div class="contact-cards">
+          <a href="mailto:ramatriramdhani@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>ramatriramdhani@gmail.com</p>
+          </a>
+          <a href="https://linkedin.com/in/ramatriramdhani" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p>Connect with me</p>
+          </a>
+          <a href="https://github.com/ramapnd18" target="_blank" class="contact-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>Check my repos</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <footer>
-      <div class="container">
-        <p>
-          &copy; 2026 Rama Tri Ramdhani. Semua hak dilindungi undang-undang.
-        </p>
-      </div>
+      <p>&copy; 2026 Rama Tri Ramdhani. Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> and Code.</p>
     </footer>
 
     <script src="js/script.js"></script>
