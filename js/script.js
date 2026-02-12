@@ -21,6 +21,36 @@ document.addEventListener('DOMContentLoaded', function() {
     let index = 0;
     let currentText = '';
     let letter = '';
+    
+    // --- FITUR DARK MODE ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = themeToggle.querySelector('i');
+
+    // 1. Cek apakah pengguna pernah memilih tema sebelumnya
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun'); // Ubah ikon jadi matahari
+    }
+
+    // 2. Fungsi saat tombol diklik
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            // Jika masuk mode gelap
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            localStorage.setItem('theme', 'dark'); // Simpan ke memori browser
+        } else {
+            // Jika masuk mode terang
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    });
 
     (function type() {
         if (count === texts.length) {
